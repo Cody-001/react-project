@@ -1,11 +1,15 @@
+import { useState } from "react";
 import logo from "../assets/img/logo/logo.png";
 import hero1 from "../assets/img/gallery/h1_hero1.jpg";
 import scissors from "../assets/img/icon/scissors.svg";
-import { useStateScroll } from "../hooks/useStateScroll";
+import useStateScroll from "../hooks/useStateScroll";
+
+
 
 
 
 function Home() {
+  const { showMenu, toggleMenu } = useStateScroll();
   return (
     <>
       <section id="home">
@@ -25,12 +29,13 @@ function Home() {
                         <div className="logo">
                           <a href="index.html"><img src={logo} alt="" /></a>
                         </div>
+                        <div className="slicknav_btn" onClick={toggleMenu} ><span>MENU</span></div>
 
-                        <div className="main-menu d-none d-lg-block">
+                        <div className="main-menu">
                           <nav>
                             <span> </span>
-                            <ul id="navigation">
-                              <li><a href="#home" onClick={() => useStateScroll("#home")} >Home</a></li>
+                            <ul id="navigation" style={{ display: showMenu ? 'block' : 'none' }}>
+                              <li><a href="#home" onClick={() => useStateScroll("#home")} >Home </a></li>
                               <li><a href="#about" onClick={() => useStateScroll("#about")} >About</a></li>
                               <li><a href="#service" onClick={() => useStateScroll("#service")}>Service</a></li>
                               <li><a href="#gallery" onClick={() => useStateScroll("#gallery")}>Gallery</a></li>
@@ -53,6 +58,7 @@ function Home() {
                     <div className="col-12">
                       <div className="mobile_menu d-block d-lg-none"></div>
                     </div>
+                  
                   </div>
                 </div>
               </div>

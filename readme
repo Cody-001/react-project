@@ -1,0 +1,16 @@
+<div className="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabIndex="0" className="slicknav_btn slicknav_open" style={{outline: "none"}}><span className="slicknav_menutxt">MENU</span><span className="slicknav_icon"><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span><span className="slicknav_icon-bar"></span></span></a><ul className="slicknav_nav" aria-hidden="false" role="menu" style={{display: "block"}}>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Service</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+<li className="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabIndex="0" className="slicknav_item slicknav_row" style={{outline: "none"}}><a href="#" tabIndex="0">Blog</a>
+      <span className="slicknav_arrow"></span></a><ul className="submenu slicknav_hidden" role="menu" aria-hidden="true" style={{display: "none"}}>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog_details.html">Blog Details</a></li>
+            <li><a href="elements.html">Elements</a></li>
+        </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+   
+    <li className="header-right-btn"><a href="#" className="header-btn">Free Quote</a> </li>
+</ul></div>

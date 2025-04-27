@@ -193,6 +193,12 @@ hr {
     box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2)
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-righ {
+        width: 20px;
+    }
+}
+
 @media (max-width: 575px) {
     #back-top {
         right: 16px
@@ -1282,7 +1288,7 @@ ul.submenu {
     .slider-area .single-slider .slider-cap-wrapper .hero-caption {
         width: 100%;
         padding: 15px;
-        margin-top: -50px
+        margin-top: 20px
     }
 }
 
@@ -1740,13 +1746,13 @@ ul.submenu {
 }
 
 .about-area .about-caption .about-single .pera {
-    padding-left: 26px
+    padding-left: 10px
 }
 
 @media (max-width: 575px) {
     .about-area .about-caption .about-single .pera {
         padding-left: 0px;
-        margin-bottom: 20px
+        margin-bottom: 10px
     }
 }
 
@@ -4709,7 +4715,6 @@ del {
     left: 0;
     width: 100vw;
     background-color: #150303;
-    overflow: visible;
     z-index: 999999999999999999999 !important
 
 }
@@ -4719,10 +4724,150 @@ del {
 }
 
 .header-righ nav {
-    margin-left: 16vw;
-   
+    margin-left: 16vw;  
 }
+
 
 .header-righ .logo {
     margin: 19px 0 0 8vw;
+}
+.slicknav_btn {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header-righ {
+      height: 60px; 
+      display: flex;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      background-color: #150303;
+      z-index: 999999999999999999999 !important
+    };
+    .header-righ span{
+        color: white;
+        font-weight: 700;
+        text-shadow: 0 1px 3px #000;
+        text-align: center;
+    }
+    .slicknav_btn{
+        display: block;
+        width: 100px;
+        height: fit-content;
+        padding: 10px; 
+        border: 1px solid white;   
+        margin: auto 20vw;
+        color: white;
+    } 
+    #navigation {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: #150303;
+        width: 100vh;
+        padding: 5px;
+        line-height: 2px;
+       
+        
+        
+      }
+  #navigation.show{
+    display: block;
+    }
+   
+  
+    
+    .mobile_menu {
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        z-index: 99;
+    };
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .slider-area .single-slider .slider-cap-wrapper .hero-caption h1 {
+        width: 150px;
+        font-size: 25px;
+        margin-bottom: 2px;
+        padding-top: 10px;
+    }
+    .slider-area .single-slider .slider-cap-wrapper .hero-caption img {
+        margin-bottom: 5px;
+    }
+    .aboutFlex{
+        display: block;
+        margin: 0;
+        padding: 0;
+
+    }
+    .container {
+        padding: 5px;
+    }
+    .section-padding {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .section-tittle {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .gridColumn {
+        display: block;
+        gap: 10px;
+    }
+    .accordion-button {
+        width: 100vw;
+        height: 60px;
+        border: none;
+        background-color: red;
+    }
+    .MuiAccordionDetails-root {
+        width: 90vw;
+        padding: 8px 16px 16px 8px;
+        font-size: 10px;
+    }
+    .projectImg img {
+        width: 90%;
+        height: 50vw;
+    }
+}
+@media (max-width: 575px){
+    .sectionContainer {
+        display: block;
+        padding: 0 10px;
+    }
+    .grid-content {
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+    }
+    
+.instagram-active {
+    display: none    
+}
+
+.rowCol {
+    display: block;
+}
+.footer-padding {
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.footerWrapper {
+    display: block;
+    gap: 10px;
+}
+.singleLeft {
+    margin-left: 5px;
+}
+
 }

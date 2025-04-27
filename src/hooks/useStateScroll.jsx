@@ -1,6 +1,17 @@
 import React from 'react'
+import { useState } from 'react';
 
-export function useStateScroll (id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+const useStateScroll = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+      setShowMenu(!showMenu);
+    };
+  
+    return { showMenu, toggleMenu };
 
 }
+
+export default useStateScroll
+
+
