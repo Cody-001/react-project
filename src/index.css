@@ -892,6 +892,9 @@ hr {
 #navigation li {
     margin: 0 10px;
 }
+#navigation {
+    display: flex !important
+}
 
 .header-area .main-menu ul li a {
     -webkit-transition: all .3s ease-out 0s;
@@ -4754,7 +4757,7 @@ del {
     }
     .slicknav_btn{
         display: block;
-        width: 100px;
+        width: fit-content;
         height: fit-content;
         padding: 10px; 
         border: 1px solid white;   

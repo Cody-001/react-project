@@ -34,7 +34,7 @@ function Home() {
                         <div className="main-menu">
                           <nav>
                             <span> </span>
-                            <ul id="navigation" style={{ display: showMenu ? 'block' : 'none' }}>
+                            <ul id="navigation" style={{ display: showMenu ? 'flex' : 'none' }}>
                               <li><a href="#home" onClick={() => useStateScroll("#home")} >Home </a></li>
                               <li><a href="#about" onClick={() => useStateScroll("#about")} >About</a></li>
                               <li><a href="#service" onClick={() => useStateScroll("#service")}>Service</a></li>
